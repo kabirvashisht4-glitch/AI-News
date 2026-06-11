@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
-export default function Header({x}) {
+export default function Header(x) {
+    let {col,fun} = x
     let d = "";
     let e = "";
     if (x.col == "white"){
@@ -12,14 +13,14 @@ export default function Header({x}) {
     }
     return (
         <header id="gate" style={{
-            backgroundColor: x.col , 
+            backgroundColor: col , 
             color: e,
         }}>
             <h1 style={{
-                backgroundColor: x.col , 
+                backgroundColor: col , 
                 color: e ,
             }}>Artificial Intelligence</h1>
-            <button className="passage" onClick={x.fun}>{d}</button>
+            <button className="passage" onClick={fun}>{d}</button>
         </header>
     )
 }

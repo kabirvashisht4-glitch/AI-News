@@ -6,6 +6,7 @@ import "./App.css";
 import React , {useState, useEffect} from "react";
 export default function App() {
   let [c, setC] = useState("white")
+  const [bat, setBat] = useState("");
   let y = () => {
     if (c == "white"){
       setC("black")
@@ -14,12 +15,14 @@ export default function App() {
       setC("white")
     }
   }
+  const handleClick = (value) => {
+    setBat(value);
+  };
   return (
     <div style={{backgroundColor: c}}>
-      <Header x = {{col : c , fun : y }}/>
-      <Sidebar />
-      <Body />
-      <Footer />
+      <Header col = {c} fun ={y}/>
+      <Sidebar col= {c} fen= {handleClick}/>
+      <Body col={c} work = {bat}/>
     </div>
   )
 }
