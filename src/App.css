@@ -1,5 +1,4 @@
 #gate{
-    color: black;
     display: grid;
     place-items: center;
     padding: 30px;
@@ -14,7 +13,6 @@
     top: 160px;
     width: 200px;
     height: 700px;
-    color: black;
     display: grid;
     place-content: center;
     border: 2px solid black;
@@ -23,7 +21,6 @@
 #arena{
     width: 1153px;
     height: 700px;
-    color: black;
     padding: 30px;
     margin: 5px;
     left: 280px;
@@ -58,6 +55,4 @@
     position: absolute;
     right: 40px;
     border: 2px solid black;
-    color: black;
-    background-color: white;
 }

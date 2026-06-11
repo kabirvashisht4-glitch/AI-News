@@ -15,7 +15,7 @@ export default function App() {
     }
   }
   return (
-    <div>
+    <div style={{backgroundColor: c}}>
       <Header x = {{col : c , fun : y }}/>
       <Sidebar />
       <Body />
