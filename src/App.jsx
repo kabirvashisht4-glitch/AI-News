@@ -16,10 +16,11 @@ export default function App() {
   }
   return (
     <div style={{backgroundColor: color}}>
-      <Header/>
-      <Sidebar x = {{f: y}}/>
-      <Body />
+      <Header x = {{c: color , f: y}}/>
+      <Sidebar currentColor={color} />
+      <Body currentColor={color} />
       <Footer />
     </div>
   )
 }
+

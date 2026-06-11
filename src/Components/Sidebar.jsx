@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Body from "./Body";
 
-export default function Sidebar() {
+export default function Sidebar(props) {
     const [bat, setBat] = useState("");
 
     const handleClick = (value) => {
@@ -11,7 +11,7 @@ export default function Sidebar() {
     return (
         <>
         <Body work={bat} />
-        <nav id="trainer1">
+        <nav id="trainer1" style={{ backgroundColor: props.currentColor }}>
             <div className="trainer2">
                 <button id="student1" onClick={() => handleClick("Space")}>{"Space"}</button>
                 <button id="student1" onClick={() => handleClick("Robotics")}>{"Robotics"}</button>
