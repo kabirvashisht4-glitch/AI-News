@@ -9,15 +9,17 @@ export default function Sidebar() {
     };
 
     return (
+        <>
+        <Body work={bat} />
         <nav id="trainer1">
-            <Body work={bat} />
             <div className="trainer2">
-                <button onClick={() => handleClick("Space")}>{"Space"}</button>
-                <button onClick={() => handleClick("Robotics")}>{"Robotics"}</button>
-                <button onClick={() => handleClick("DevOps")}>{"DevOps"}</button>
-                <button onClick={() => handleClick("Cyber Security")}>{"Cyber Security"}</button>
-                <button onClick={() => handleClick("Biology")}>{"Biology"}</button>
+                <button id="student1" onClick={() => handleClick("Space")}>{"Space"}</button>
+                <button id="student1" onClick={() => handleClick("Robotics")}>{"Robotics"}</button>
+                <button id="student1" onClick={() => handleClick("DevOps")}>{"DevOps"}</button>
+                <button id="student1" onClick={() => handleClick("Cyber Security")}>{"Cyber Security"}</button>
+                <button id="student1" onClick={() => handleClick("Biology")}>{"Biology"}</button>
             </div>
         </nav>
+        </>
     );
 }
