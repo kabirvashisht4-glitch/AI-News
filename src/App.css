@@ -40,12 +40,13 @@
     margin: 10px;
 }
 
-.trainer2 #student1{
-
+#student1{
     padding: 30px; 
     margin : 30px;
-    position: relative;
-    left: 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #gate .passage {
