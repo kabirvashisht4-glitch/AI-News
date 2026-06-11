@@ -3,24 +3,23 @@ import Sidebar from "./Components/Sidebar";
 import Body from "./Components/Body";
 import Footer from "./Components/Footer";
 import "./App.css";
-import React , {useState, useEffect} from "react"
+import React , {useState, useEffect} from "react";
 export default function App() {
-  let [color,setColor] = useState("white")
+  let [c, setC] = useState("white")
   let y = () => {
-    if (color == "white"){
-      setColor("black")
+    if (c == "white"){
+      setC("black")
     }
     else{
-      setColor("white")
+      setC("white")
     }
   }
   return (
-    <div style={{backgroundColor: color}}>
-      <Header x = {{c: color , f: y}}/>
-      <Sidebar currentColor={color} />
-      <Body currentColor={color} />
+    <div>
+      <Header x = {{col : c , fun : y }}/>
+      <Sidebar />
+      <Body />
       <Footer />
     </div>
   )
 }
-

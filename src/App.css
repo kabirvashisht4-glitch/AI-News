@@ -1,17 +1,14 @@
 #gate{
     color: black;
-    background-color: white;
-    border: 2px solid black;
     display: grid;
     place-items: center;
     padding: 30px;
     margin: 5px;
+    border: 2px solid black;
 }
 
 #trainer1 {
     padding: 30px;
-    background-color: white;
-    border: 2px solid black;
     margin: 5px;
     position: absolute;
     top: 160px;
@@ -20,6 +17,7 @@
     color: black;
     display: grid;
     place-content: center;
+    border: 2px solid black;
 }
 
 #arena{
@@ -33,7 +31,6 @@
     top: 160px;
     display: grid;
     place-content: center;
-    background-color: white;
     border: 2px solid black;
 }
 
