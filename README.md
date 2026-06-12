@@ -1,15 +1,41 @@
-# React + Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# AI-Area
 
-Currently, two official plugins are available:
+A React-based web application that tracks and delivers the latest developments and breakthroughs in Artificial Intelligence across specialized fields. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Focused Categories:** Navigate through dedicated news feeds for specific sectors heavily impacted by AI, including:
+  * Space
+  * Robotics
+  * DevOps
+  * Cyber Security
+  * Biology
+* **Dark Mode Support:** Built-in "Dark Reader" toggle for comfortable reading in low-light environments.
+* **Intuitive Layout:** A clean, two-column dashboard design featuring a sticky side navigation bar and a prominent main content area.
+* **Real-Time Updates:** Stay informed with dynamic content rendering as new developments are published.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project .
+## 🛠️ Tech Stack & Structure
+
+* **Frontend:** React.js, JavaScript (ES6+), HTML5, CSS3.
+* **Suggested Component Architecture:**
+  * `<App />`: The main container managing state (current category, dark mode).
+  * `<Header />`: Displays the main "Artificial Intelligence" title and houses the "Dark Reader" toggle button.
+  * `<Sidebar />`: Renders the navigation buttons (Space, Robotics, etc.) and updates the active category state.
+  * `<ContentArea />`: The main display panel that renders the news cards based on the currently selected category from the sidebar.
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+Ensure you have **Node.js** and **npm** installed.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/your-username/ai-area.git](https://github.com/your-username/ai-area.git)
